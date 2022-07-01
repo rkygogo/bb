@@ -135,6 +135,7 @@ makeConfig() {
     "listen": ":$PORT",
     "cert": "/root/Hysteria/cert.crt",
     "key": "/root/Hysteria/private.key",
+    "ipv6_only": true,
     "obfs": "$OBFS"
 }
 EOF
