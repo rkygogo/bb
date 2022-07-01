@@ -132,11 +132,10 @@ makeConfig() {
     openssl req -new -x509 -days 36500 -key /root/Hysteria/private.key -out /root/Hysteria/cert.crt -subj "/CN=www.bilibili.com"
     cat <<EOF > /root/Hysteria/server.json
 {
-    "listen": "[::]:$PORT",
+    "listen": ":$PORT",
     "cert": "/root/Hysteria/cert.crt",
     "key": "/root/Hysteria/private.key",
-    "ipv6_only": true,
-    "resolver": "2001:4860:4860::8888",
+    "resolve_preference": "6"
     "obfs": "$OBFS"
 }
 EOF
