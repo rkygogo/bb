@@ -136,6 +136,7 @@ makeConfig() {
     "cert": "/root/Hysteria/cert.crt",
     "key": "/root/Hysteria/private.key",
     "ipv6_only": true,
+    "resolver": "2001:4860:4860::8888",
     "obfs": "$OBFS"
 }
 EOF
